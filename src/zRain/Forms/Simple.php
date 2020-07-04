@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace zRain\Forms;
 
-use pocketmine\Player;
 use zRain\Forms\Base;
 
 class Simple extends Base

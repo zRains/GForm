@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 namespace zRain\Forms;
 
-use pocketmine\form\Form;
-use pocketmine\Player;
-
 use zRain\Forms\Base;
 
 class Modal extends Base
