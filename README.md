@@ -2,6 +2,8 @@
 
 ## ![example](https://img.shields.io/badge/version-0.0.1-brightgreen.svg)
 
+![Model2](https://github.com/zRains/GForm/blob/master/img/Model2.png?raw=true)
+
 ### 关于 GForm
 
 这是一个运行于[PocketMine-MP](https://pmmp.io/)上的一个插件，可以帮助你快速创建游戏内的表单。包括三种类型的表单(详细说明点击相应表单类型即可)：
