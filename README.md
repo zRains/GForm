@@ -4,12 +4,12 @@
 
 Documentation | 说明文档 :
 
-- English version
-- 中文
+- [English version](#about-gformhand)
+- [中文](#%E5%85%B3%E4%BA%8E-gform)
 
-### About GForm:hand:
+### About GForm :hand:
 
-GForm is a Plugin running on [pocketmine MP]( https://pmmp.io/ ) Can help you quickly create in-game forms. There are three types of forms (for detailed description, click the corresponding form type):point_down:
+GForm is a Plugin running on [pocketmine MP](https://pmmp.io/) Can help you quickly create in-game forms. There are three types of forms (for detailed description, click the corresponding form type):point_down:
 
 - **Custom**
 - **Modal**
@@ -19,7 +19,7 @@ GForm is a Plugin running on [pocketmine MP]( https://pmmp.io/ ) Can help you qu
 
 #### Step one:
 
-You can download [releases](https://github.com/zRains/GForm/releases )  directly and put the packaged '. Phar' file in your plugins folder and call the API.
+You can download [releases](https://github.com/zRains/GForm/releases) directly and put the packaged '. Phar' file in your plugins folder and call the API.
 
 **Or**
 
@@ -156,7 +156,7 @@ $Example->setButton("这是一个按钮 | This is a Button", "https://example.co
 
 ### About callback function
 
-Believe me, you really need it.:hear_no_evil:
+Believe me, you really need it. :hear_no_evil:
 
 **Callback function example:**
 
@@ -167,16 +167,16 @@ $Example = $this->plugin->Form->CreateCustomForm("Example Form", function (Playe
     // .... What you want to do.
 });
 ```
-**Return $data descriptions:**
 
- Custom form: Returns an array.
+**Return \$data descriptions:**
+
+Custom form: Returns an array.
 
 Modal form: Returns a Boolean value.
 
 Form type form: Returns the index of the button to be clicked.
 
-
-### 关于 GForm
+### 关于 GForm :hand:
 
 这是一个运行于[PocketMine-MP](https://pmmp.io/)上的一个插件，可以帮助你快速创建游戏内的表单。包括三种类型的表单(详细说明点击相应表单类型即可)：
 
@@ -184,7 +184,7 @@ Form type form: Returns the index of the button to be clicked.
 - **Modal**
 - **Form**
 
-### 如何使用
+### 如何使用 :question:
 
 #### 第一步
 
@@ -204,7 +204,7 @@ $this->Form = $this->getServer()->getPluginManager()->getPlugin("GForm");
 
 ### 使用 API
 
-#### 创建 Custom 型表单
+#### :point_right:创建 Custom 型表单
 
 ```php
 // $Title 为标题，$Callback 为回调函数。
@@ -259,7 +259,7 @@ $Example->setToggle("这是一个开关 | This is a Toggle", false);
 $Example->setDropdown("这是一个下拉菜单 | This is Dropdown", ["item1","item2"]);
 ```
 
-#### 创建 Modal 型表单
+#### :point_right: 创建 Modal 型表单
 
 ```php
 // $Title 为标题，$Callback 为回调函数。
@@ -290,7 +290,7 @@ $Example->setContent("这是内容 | This is Content");
 $Example->setButton(["正确 | Yes", "错误 | No"]);
 ```
 
-#### 创建 Form 型表单
+#### :point_right: 创建 Form 型表单
 
 ```php
 // $Title 为标题，$Callback 为回调函数。
@@ -324,7 +324,7 @@ $Example->setButton("这是一个按钮 | This is a Button", "https://example.co
 
 ### 关于回调函数
 
-没有这个表单就只是展示的东西。
+没有这个表单就只是展示的东西。你肯定需要它。:hear_no_evil:
 
 **回调函数示例**
 
@@ -335,20 +335,27 @@ $Example = $this->plugin->Form->CreateCustomForm("Example Form", function (Playe
     // .... 你想做的事。
 });
 ```
+
 **返回数据说明**
 
-Custom型表单：返回一个数组。
+Custom 型表单：返回一个数组。
 
-Modal型表单：返回布尔值。
+Modal 型表单：返回布尔值。
 
-Form型表单：返回被点击按钮的索引。
+Form 型表单：返回被点击按钮的索引。
 
 ### 表单类型介绍
+
 #### Custom
-![Custom1](https://github.com/zRains/GForm/blob/master/img/Custom1.jpg?raw=true)
----
+
+## ![Custom1](https://github.com/zRains/GForm/blob/master/img/Custom1.jpg?raw=true)
+
 ![Custom2](https://github.com/zRains/GForm/blob/master/img/Custom2.jpg?raw=true)
+
 #### Modal
+
 ![Modal](https://github.com/zRains/GForm/blob/master/img/Model.jpg?raw=true)
+
 #### Form
+
 ![Form](https://github.com/zRains/GForm/blob/master/img/Form.jpg?raw=true)
