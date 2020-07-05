@@ -2,7 +2,7 @@
 
 ## ![example](https://img.shields.io/badge/version-0.0.1-brightgreen.svg)
 
-![Model2](https://github.com/zRains/GForm/blob/master/img/Model2.png?raw=true)
+![icon](https://github.com/zRains/GForm/blob/master/img/icon.png?raw=true)
 
 ### 关于 GForm
 
