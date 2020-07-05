@@ -1,8 +1,7 @@
-# GForm
+![icon](https://github.com/zRains/GForm/blob/master/img/icon.png?raw=true)
 
 ## ![example](https://img.shields.io/badge/version-0.0.1-brightgreen.svg)
 
-![icon](https://github.com/zRains/GForm/blob/master/img/icon.png?raw=true)
 
 ### 关于 GForm
 
