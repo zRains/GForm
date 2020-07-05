@@ -2,6 +2,180 @@
 <div style="margin-top:10px"><img src="https://img.shields.io/badge/version-0.0.1-brightgreen.svg"></div>
 </center>
 
+Documentation | 说明文档 :
+
+- English version
+- 中文
+
+### About GForm:hand:
+
+GForm is a Plugin running on [pocketmine MP]( https://pmmp.io/ ) Can help you quickly create in-game forms. There are three types of forms (for detailed description, click the corresponding form type):point_down:
+
+- **Custom**
+- **Modal**
+- **Form**
+
+### How to use it :question:
+
+#### Step one:
+
+You can download [releases](https://github.com/zRains/GForm/releases )  directly and put the packaged '. Phar' file in your plugins folder and call the API.
+
+**Or**
+
+Download the source code directly and load it through 'devtools'. This is recommended for developers.
+
+#### Step two:
+
+Call the plugin in the corresponding file:
+
+```php
+$this->Form = $this->getServer()->getPluginManager()->getPlugin("GForm");
+```
+
+### Use API
+
+#### :point_right: Create custom form:
+
+```php
+// $Title is form title，$Callback is a callback function。
+$Example = $this->Form->CreateCustomForm(string $Title, ?callable $Callback);
+
+// Show the form to the player after configuration,$player instanceof Player == true。
+$Example->sendForm($player);
+```
+
+**Form components and application examples:**
+
+```php
+/*
+ * Title: Title - required. You can set the title at the beginning of creation, and use this method as the final title after calling this method.
+ * Parameter 1: title content. string
+ */
+$Example->setTitle = "这是一个标题 | This is a Title";
+
+/*
+ * Slider: slider - optional.
+ * Parameter 1: label displayed on the slider. string
+ * Parameter 2: slider sliding minimum value, default: 0. Int
+ * Parameter 3: maximum sliding value of slider, default :100. Int
+ * Parameter 4: the default value that the slider first displays, default :0. Int
+ */
+$Example->setSlider("这是一个滑块 | This is a Slider", 0, 100, 0);
+
+/*
+ * Label: Label - optional.
+ * Parameter 1: label content. string
+ */
+$Example->setLabel("这是一个标签 | This is a label");
+
+/*
+ * Step bar: step_ Slider - optional.
+ * Parameter 1: the label displayed above the step bar. string
+ * Parameter 2: an array of information (Only useful for callback). array
+ */
+$Example->setSteps("这是一个步骤条 | This is a Stepslider", ["1","2","3"]);
+
+/*
+ * Toggle: toggle - optional.
+ * Parameter 1: display the label in front of the switch. string
+ * Parameter 2: display switch status by default, default :false. bool
+ */
+$Example->setToggle("这是一个开关 | This is a Toggle", false);
+
+/*
+ * Drop down menu: dropdown - optional.
+ * Parameter 1: the label displayed on the drop-down menu. string
+ * Parameter 2: an array containing menu data. array
+ */
+$Example->setDropdown("这是一个下拉菜单 | This is Dropdown", ["item1","item2"]);
+```
+
+#### :point_right: Create modal form
+
+```php
+// $Title is form title，$Callback is a callback function。
+$Example = $this->Form->CreateModalForm(string $Title, ?callable $Callback);
+// Show the form to the player after configuration,$player instanceof Player == true。
+$Example->sendForm($player);
+```
+
+**Form components and application examples:**
+
+```php
+/*
+ * Title: Title - required.
+ * Parameter 1: title content. string
+ */
+$Example->setTitle = "这是一个标题 | This is a Title";
+
+/*
+ * Content: content - required.
+ * Parameter 1: the content displayed in the form. string
+ */
+$Example->setContent("这是内容 | This is Content");
+
+/*
+ * Button group: buttons - required.
+ * Parameter 1: an array containing the contents of two buttons. array
+ */
+$Example->setButton(["正确 | Yes", "错误 | No"]);
+```
+
+#### :point_right: Create Form form
+
+```php
+// $Title is form title，$Callback is a callback function。
+$Example = $this->Form->CreateSimpleForm(string $Title, ?callable $Callback);
+// Show the form to the player after configuration,$player instanceof Player == true。
+$Example->sendForm($player);
+```
+
+**Form components and application examples:**
+
+```php
+/*
+ * Title: Title - required.
+ * Parameter 1: title content. string
+ */
+$Example->setTitle = "这是一个标题 | This is a Title";
+/*
+ * Content: content - required.
+ * Parameter 1: the content displayed in the form. string
+ */
+$Example->setContent("这是内容 | This is Content");
+
+/*
+ * Buttons: buttons - at least one, more than one.
+ * Parameter 1: label displayed on the button. string
+ * Parameter 2: URL or path of the image displayed in front of the button. string
+ * Parameter 3: parameter 2 type, optional :URL | path, default :URL. string
+ */
+$Example->setButton("这是一个按钮 | This is a Button", "https://example.com/example.jpg", "url");
+```
+
+### About callback function
+
+Believe me, you really need it.:hear_no_evil:
+
+**Callback function example:**
+
+```php
+// $player is the player object of the operation form.$data Is the data returned after the form is manipulated (the form is closed).
+$Example = $this->plugin->Form->CreateCustomForm("Example Form", function (Player $player, $data) {
+    $this->plugin->getLogger()->info(var_dump($data));
+    // .... What you want to do.
+});
+```
+**Return $data descriptions:**
+
+ Custom form: Returns an array.
+
+Modal form: Returns a Boolean value.
+
+Form type form: Returns the index of the button to be clicked.
+
+
 ### 关于 GForm
 
 这是一个运行于[PocketMine-MP](https://pmmp.io/)上的一个插件，可以帮助你快速创建游戏内的表单。包括三种类型的表单(详细说明点击相应表单类型即可)：
