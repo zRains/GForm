@@ -11,9 +11,9 @@ Documentation | 说明文档 :
 
 GForm is a Plugin running on [pocketmine MP](https://pmmp.io/) Can help you quickly create in-game forms. There are three types of forms (for detailed description, click the corresponding form type):point_down:
 
-- **Custom**
-- **Modal**
-- **Form**
+- [**Custom**](#custom)
+- [**Modal**](#modal)
+- [**Form**](#form)
 
 ### How to use it :question:
 
@@ -180,9 +180,9 @@ Form type form: Returns the index of the button to be clicked.
 
 这是一个运行于[PocketMine-MP](https://pmmp.io/)上的一个插件，可以帮助你快速创建游戏内的表单。包括三种类型的表单(详细说明点击相应表单类型即可)：
 
-- **Custom**
-- **Modal**
-- **Form**
+- [**Custom**](#custom)
+- [**Modal**](#modal)
+- [**Form**](#form)
 
 ### 如何使用 :question:
 
