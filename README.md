@@ -4,8 +4,8 @@
 
 Documentation | 说明文档 :
 
-- [English version](#about-gformhand)
-- [中文](#%E5%85%B3%E4%BA%8E-gform)
+- [English version](#about-gform-hand)
+- [中文](#关于-gform-hand)
 
 ### About GForm :hand:
 
