@@ -40,10 +40,10 @@ abstract class Base implements Form
     {
         if (is_array($data)) {
             foreach ($data as &$item) {
-                $item = is_array($item) ? $this->Color_Symbol($item) : preg_replace("/({$this->Color_Symbol})/", "§", $item);
+                $item = is_array($item) ? $this->Color_Symbol($item) : (is_string($item) ? preg_replace("/({$this->Color_Symbol})/", "§", $item) : $item);
             }
         } else {
-            $data = preg_replace("/({$this->Color_Symbol})/", "§", $data);
+            $data = is_string($data) ? preg_replace("/({$this->Color_Symbol})/", "§", $data) : $data;
         }
         return $data;
     }
