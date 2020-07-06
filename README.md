@@ -154,7 +154,7 @@ $Example->setContent("这是内容 | This is Content");
 $Example->setButton("这是一个按钮 | This is a Button", "https://example.com/example.jpg", "url");
 ```
 
-### :wrench:配置文件
+### :wrench:Configuration
 
 :heavy_check_mark: **Config_Version：** Configuration file version.
 
