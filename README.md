@@ -156,19 +156,19 @@ $Example->setButton("这是一个按钮 | This is a Button", "https://example.co
 
 ### :wrench:配置文件
 
-:heavy_check_mark:**Config_Version：**Configuration file version.
+:heavy_check_mark: **Config_Version：**Configuration file version.
 
-:heavy_exclamation_mark:**Auto_Hide_Error_Form：**Failed to create a form. The error form is automatically hidden. default :false.
+:heavy_exclamation_mark: **Auto_Hide_Error_Form：**Failed to create a form. The error form is automatically hidden. default :false.
 
-:heavy_check_mark:**Default_Require_Text：**The content that is automatically filled when the necessary content is empty.
+:heavy_check_mark: **Default_Require_Text：**The content that is automatically filled when the necessary content is empty.
 
-:heavy_check_mark:**Step_Bar_Empty：**Fill in the default content when the step bar is empty. Default: ["E", "R", "R", "O", "R"]
+:heavy_check_mark: **Step_Bar_Empty：**Fill in the default content when the step bar is empty. Default: ["E", "R", "R", "O", "R"]
 
-:heavy_check_mark:**Dropdown_Empty：**Fill in the default content when the drop-down menu is empty. Default: ["E", "R", "R", "O", "R"]
+:heavy_check_mark: **Dropdown_Empty：**Fill in the default content when the drop-down menu is empty. Default: ["E", "R", "R", "O", "R"]
 
-:heavy_check_mark:**Default_Img：**When the image address is empty, the default image. Default: "textures/blocks/redstone_block.png"
+:heavy_check_mark: **Default_Img：**When the image address is empty, the default image. Default: "textures/blocks/redstone_block.png"
 
-:heavy_check_mark:**Color_Symbol：**Custom color symbol. Default: §
+:heavy_check_mark: **Color_Symbol：**Custom color symbol. Default: §
 
 ### Get table data
 
