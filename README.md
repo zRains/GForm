@@ -1,5 +1,5 @@
 <center><img src="https://github.com/zRains/GForm/blob/master/img/icon.png?raw=true">
-<div style="margin-top:10px"><img src="https://img.shields.io/badge/version-0.0.1-brightgreen.svg"></div>
+<div style="margin-top:10px"><img src="https://img.shields.io/badge/version-1.0.0-brightgreen.svg"></div>
 </center>
 
 Documentation | 说明文档 :
