@@ -1,0 +1,27 @@
+#    _____   ______
+#   / ____| |  ____|
+#  | |  __  | |__      ___    _ __   _ __ ___
+#  | | |_ | |  __|    / _ \  | '__| | '_ ` _ \
+#  | |__| | | |      | (_) | | |    | | | | | |
+#   \_____| |_|       \___/  |_|    |_| |_| |_|
+
+#配置文件版本 | Config version
+Config_Version: 1.0.0
+
+#创建表单失败自动隐藏错误表单 | Failed to create a form. Automatically hide the error form
+Auto_Hide_Error_Form: false
+
+#当必要内容为空时自动填充的内容 | Content that is automatically filled when the necessary content is empty
+Default_Require_Text: "Empty"
+
+#当步骤条为空填充默认内容 | Fill in the default content when the step bar is empty(error)
+Step_Bar_Empty: ["E", "R", "R", "O", "R"]
+
+#当下拉菜单为空填充默认内容 | Fill in the default content when the drop-down menu is empty
+Dropdown_Empty: ["E", "R", "R", "O", "R"]
+
+#当图片地址为空时默认图片 | When the image URL is empty, the default image
+Default_Img: "textures/blocks/redstone_block.png"
+
+#自定义颜色符 | Custom color symbol
+Color_Symbol: "§"
