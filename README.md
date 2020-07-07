@@ -370,13 +370,6 @@ $Example->setButton("这是一个按钮 | This is a Button", "https://example.co
 $Data = $Example->getFormData();
 ```
 
-
-### 获取表格数据
-返回一个包含当前表格数据的数组：
-```php
-$Data = $Example->getFormData();
-```
-
 ### 关于回调函数
 
 没有这个表单就只是展示的东西。你肯定需要它。:hear_no_evil:
