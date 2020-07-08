@@ -14,10 +14,10 @@ class Custom  extends Base
         parent::__construct("custom_form", $Title, $CallBack, $Node);
     }
 
-    // Slider
-    public function setInput(?string $text = null, string $default): void
+    // Input
+    public function setInput(?string $text = null, ?string $default = null): void
     {
-        $this->FormData["content"][] = ["type" => "input", "text" => $this->nullSet($text), "default" => $default];
+        $this->FormData["content"][] = ["type" => "input", "text" => $this->nullSet($text), "default" => nullSet($$default)];
     }
 
     // Slider
