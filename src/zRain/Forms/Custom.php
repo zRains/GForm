@@ -17,7 +17,7 @@ class Custom  extends Base
     // Input
     public function setInput(?string $text = null, ?string $default = null): void
     {
-        $this->FormData["content"][] = ["type" => "input", "text" => $this->nullSet($text), "default" => nullSet($default)];
+        $this->FormData["content"][] = ["type" => "input", "text" => $this->nullSet($text), "default" => $this->nullSet($default)];
     }
 
     // Slider
